@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+ Answer: Closure is referencing external variables from within a nested function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+Answer: closure is used here by the console.log because the name parameter in the function is being referred to by the console.log within the nested return function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+Answer: The name variable is always the same. The newRoll variable could change to any number between 1 and 6 because of the use of random.
 c. What is the lexical scope of `newRoll`? 
+Answer: The lexical scope of 'newRoll' is where it was declared. Which in this example, is in the nested function after the return.
 
 
 ### Task 3 - Stretch Goals
